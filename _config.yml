@@ -15,7 +15,7 @@ timezone: 'America/Sao_Paulo'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://gleidson.me/notes
+url: https://gleidson.me/notes/
 permalink: :title/
 permalink_defaults:
 pretty_urls:

@@ -26,11 +26,8 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - run: npm install
       - run: npm run build
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      - run: aws s3 sync ./public s3://gleidson.me/notes --delete
-      - run: aws cloudfront create-invalidation --distribution-id ${{ env.distribution_id }} --paths "/notes/*"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

@@ -1,21 +1,7 @@
 ---
 title: AWS SPA - Deployment
 ---
-
-Esse artigo tem como objetivo esclarecer o funcionamento de aplicações frontend no estilo estático, fazer deployment dessas aplicações em ambiente cloud e também mostrar conceitos e funcionamento de provedores.
-
----
-
-- Assuntos para serem abordados:
-    - O que é uma aplicação frontend estática;
-    - O que são os artefatos ou arquivos de compilação;
-    - Subindo aplicações estáticas no Github Pages
-    - Como configurar um ambiente de SPA utilizando AWS;
-    - Como melhorar a velocidade de entrega da sua aplicação usando amazon CloudFront
-
----
-
-## Aplicação Frontend + Github Pages
+# Aplicação Frontend + Github Pages
 
 Criar aplicações frontend é quase uma mania, ainda mais quando vemos um projeto interessante ou algo legal que gostaríamos de tentar replicar. Porém automatizar um deploy ou subir isso para algumas pessoas verem pode se tornar um pouco frustrate quando não temos conhecimento em como fazer e quais são as melhores maneiras de se fazer isso. 
 

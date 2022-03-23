@@ -1,7 +1,6 @@
 ---
-title: AWS SPA - Deployment
+title: Aplicação Frontend + Github Pages
 ---
-# Aplicação Frontend + Github Pages
 
 Criar aplicações frontend é quase uma mania, ainda mais quando vemos um projeto interessante ou algo legal que gostaríamos de tentar replicar. Porém automatizar um deploy ou subir isso para algumas pessoas verem pode se tornar um pouco frustrate quando não temos conhecimento em como fazer e quais são as melhores maneiras de se fazer isso. 
 

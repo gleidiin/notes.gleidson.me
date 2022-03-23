@@ -1,7 +1,6 @@
 ---
 title: AWS SPA - Deployment
 ---
-# AWS SPA - Deployment
 
 Esse artigo tem como objetivo esclarecer o funcionamento de aplicações frontend no estilo estático, fazer deployment dessas aplicações em ambiente cloud e também mostrar conceitos e funcionamento de provedores.
 

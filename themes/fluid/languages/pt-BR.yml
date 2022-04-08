@@ -1,0 +1,44 @@
+search:
+  title: Pesquisa
+  keyword: Palavra-chave
+  status:
+    success: v
+    error: x
+
+postTotal: "Total de %d postagens."
+
+paginator:
+  pre: Anterior
+  next: Próximo
+
+post:
+  toc: Tópicos
+  pre: Anterior
+  next: Próximo
+
+home:
+  title: Home
+
+archive:
+  title: Arquivados
+  subtitle: Arquivado
+
+tag:
+  title: Tags
+  subtitle: Tag
+
+category:
+  title: Categorias
+  subtitle: Categoria
+
+about:
+  title: Sobre
+  subtitle: Sobre
+
+page404:
+  title: Página não encontrada
+  subtitle: Oops, a página que procura não foi encontrada...
+
+links:
+  title: Links
+  subtitle: Links

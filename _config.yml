@@ -9,7 +9,7 @@ description: ''
 keywords: software developer, devops, frontend, node js, javascript, backend, event-driven
 author: Gleidson Braga
 language:
-- pt-br
+- pt-BR
 - en
 timezone: 'America/Sao_Paulo'
 
@@ -99,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

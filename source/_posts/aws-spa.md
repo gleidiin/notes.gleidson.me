@@ -1,5 +1,14 @@
 ---
 title: Aplicação Frontend + Github Pages
+index_img: /images/github-page-thumbnail.png
+banner_img: /images/github-page-thumbnail.png
+date: 2022-03-23T01:03:47.753Z
+categories: 
+  - Github
+  - SPA
+tags: 
+  - CI
+  - Hosting
 ---
 
 Criar aplicações frontend é quase uma mania, ainda mais quando vemos um projeto interessante ou algo legal que gostaríamos de tentar replicar. Porém automatizar um deploy ou subir isso para algumas pessoas verem pode se tornar um pouco frustrate quando não temos conhecimento em como fazer e quais são as melhores maneiras de se fazer isso. 

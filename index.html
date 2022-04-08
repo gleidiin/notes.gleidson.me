@@ -1,239 +1,355 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR,en,default" >
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://gleidson.me/favicon.ico">
+  <link rel="icon" href="https://gleidson.me/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
-  <title>Gleidson&#39;s Notes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1e1b44">
+  <meta name="author" content="Gleidson Braga">
+  <meta name="keywords" content="software developer, devops, frontend, node js, javascript, backend, event-driven">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Gleidson&#39;s Notes">
 <meta property="og:url" content="https://notes.gleidson.me/">
 <meta property="og:site_name" content="Gleidson&#39;s Notes">
 <meta property="og:locale" content="pt_BR">
 <meta property="article:author" content="Gleidson Braga">
 <meta property="article:tag" content="software developer, devops, frontend, node js, javascript, backend, event-driven">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Gleidson's Notes" type="application/atom+xml">
+<meta name="twitter:card" content="summary_large_image">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <title>Gleidson&#39;s Notes</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
 
   
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/custom-css.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"notes.gleidson.me","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":2,"color":"#c438ef","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 6.0.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Gleidson&#39;s Notes</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+  <header style="height: 30vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Gleidson&#39;s Notes</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categorias
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Arquivados
+              </a>
+            </li>
+          
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://gleidson.me">
+                <i class="iconfont icon-user-fill"></i>
+                Sobre
+              </a>
+            </li>
+          
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://notes.gleidson.me"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-aws-spa" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/aws-spa/" class="article-date">
-  <time class="dt-published" datetime="2022-03-23T01:03:47.753Z" itemprop="datePublished">2022-03-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/aws-spa/">Aplicação Frontend + Github Pages</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Criar aplicações frontend é quase uma mania, ainda mais quando vemos um projeto interessante ou algo legal que gostaríamos de tentar replicar. Porém automatizar um deploy ou subir isso para algumas pessoas verem pode se tornar um pouco frustrate quando não temos conhecimento em como fazer e quais são as melhores maneiras de se fazer isso. </p>
-<p>Então veremos algumas formas de fazer deploy (famoso deployar) aplicações frontend usando ferramentas de mercado e padrões já conhecidos. </p>
-<p>Antes de mais nada, gostaria de deixar claro que as formas que iremos ver são relacionadas ao frontend estático, que é conhecido como SPA (single page application- aplicação de página única). esse tipo de aplicação tem como objetivo criar uma série de arquivos estáticos que serão utilizados no servidor para renderizar as páginas, caso você esteja trabalhando com SSR (server side rendering - renderização no servidor) isso se torna um pouco mais complicado, uma vez que você precisará de um servidor que irá renderizar o conteúdo e devolver para o usuário. </p>
-<p>Como saber se estou trabalhando com SSR ou SPA? Verifique se o build no <code>package.json</code> irá gerar uma pasta com os arquivos estáticos ou até mesmo terá instruções de como utilizar sua aplicação de tal forma.</p>
-<h2 id="Como-configurar-o-repositorio-do-Github"><a href="#Como-configurar-o-repositorio-do-Github" class="headerlink" title="Como configurar o repositório do Github"></a>Como configurar o repositório do Github</h2><p>Chega de papo! Vamos começar com o clássico e o único pré-requisito para esse primeiro tutorial é: ter conhecimento de Git e Github (só isso?). Iremos disponibilizar uma página inteira no Github utilizando o Github Pages. 😊</p>
-<p>Primeiro, teremos que <a target="_blank" rel="noopener" href="https://github.com/new">criar um novo repositório público</a> no Github, lembrando que é publico porque o Github Pages tem uma limitação para criação de páginas para repositórios não públicos, caso queria você pode assinar o premium e criar com um repositório privado!</p>
-<p><img src="/images/aws-spa-7.png" alt="Siga o link acima e preencha os campos que estão demarcados com o *"></p>
-<p>Siga o link acima e preencha os campos que estão demarcados com o *</p>
-<p>Após criado, use o comando git para clonar o repositório e adicionar os arquivos da sua aplicação, na parte de cima do github, temos uma opção chamada <em>code</em> e ao clicar nela abrirá um <em>dropdown menu</em> copie o conteúdo dentro do campo de http e prossiga para a próxima etapa.</p>
-<p><img src="/images/aws-spa-1.png" alt="Printscreen com explicações do comando acima"></p>
-<aside>
-💡 Considerando que a sua primeira vez utilizando o Github, faça download do CLI do Github para seu sistema operacional e logo após o download, instale o executável o comando `git` irá aparecer no seu terminal. Após utilizar o comando `git clone` será necessário efetuar login para ter acessos no repositório
-
-</aside>
-
-<p>Pronto, com tudo copiado, agora basta ir no seu terminal preferido e rodar:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;<span class="built_in">link</span> <span class="keyword">do</span> repositorio&gt; </span><br></pre></td></tr></table></figure>
-
-<p>Agora é o momento que iremos adicionar os nosso arquivos fontes dentro do nosso repositório, é important lembrar que o repositório é público então outras pessoas terão acesso a isto, tome cuidado com dados sensíveis!</p>
-<h2 id="Como-publicar-no-Github-Pages"><a href="#Como-publicar-no-Github-Pages" class="headerlink" title="Como publicar no Github Pages"></a>Como publicar no Github Pages</h2><p>Existem duas formas de fazer isso, você gerar uma branch com o nome <code>gh-pages</code>  e subir os arquivos de build manualmente, ou utilizar um step do Github actions que vai criar automaticamente essa branch e manter os arquivos de build atualizados. Claro que vamos utilizar o Github Actions, pois torna o processo mais fácil e sem muita correria.</p>
-<p>Na raiz do seu repositório, crie uma pasta chamada <code>.github</code> e dentro desta pasta crie outra com o nome <code>workflows</code> na pasta workflows vamos adicionar arquivos que irão realizar comandos que para acionar o Github Actions, basicamente o que vamos fazer é no momento em que sua branch <code>main</code> estiver recebendo novas atualizações, iremos subir uma nova atualização para o Github Pages.</p>
-<p>Dentro da pasta workflows adicione um arquivo chamado <code>github-pages.yml</code> e cole o conteúdo a seguir (atenção, leia os comentários para entender mais o que está sendo executado)</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Github</span> <span class="string">Actions</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span> <span class="comment"># ação que ira acionar o github actions</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span>  <span class="comment"># branch que será excutado o Github actions</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">pages:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span> <span class="comment"># versão do sistema operacional</span></span><br><span class="line">    <span class="attr">steps:</span> <span class="comment"># sequênciade passos que serão executados</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span> <span class="comment"># baixar arquivos do repositório</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="number">16.</span><span class="string">x</span>  <span class="comment"># configurar executáveis npm</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;16&#x27;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Cache</span> <span class="string">NPM</span> <span class="string">dependencies</span> <span class="comment"># baixando/subindo um cache para adiantar o processo</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.OS</span> <span class="string">&#125;&#125;-npm-cache</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.OS &#125;&#125;-npm-cache</span></span><br><span class="line"><span class="string"></span>      <span class="bullet">-</span> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span> <span class="comment"># instalando dependencias</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span> <span class="comment"># construindo a aplicação</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="comment"># criando uma branch ou atualizando a branch gh-pages</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">JamesIves/github-pages-deploy-action@v4.2.5</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">gh-pages</span> </span><br><span class="line">          <span class="attr">folder:</span> <span class="string">./build</span> <span class="comment"># pasta com os assets e estaticos</span></span><br></pre></td></tr></table></figure>
-
-<p>Depois de acionado, suba essa atualização para o seu repositório do Gihtub (sua branch main) e vá para a tab actions, provavelmente verá essa mesma visualização que temos abaixo — se o seu processo de build for um pouco mais lento, em vez de estar verde, vai estar amarelo o que mostra que o processo ainda está rodando.</p>
-<p><img src="/images/aws-spa-2.png" alt="Printscreen com explicações do comando acima"></p>
-<p>E se clicar no processo, você terá acesso a uma visualização igual a visualização a seguir:</p>
-<p><img src="/images/aws-spa-3.png" alt="Printscreen com explicações do comando acima"></p>
-<p>Aqui é possível acompanhar passo-a-passo sendo executado e, caso queira modificar algo, basta mudar os comandos ou a sequência que você adicionou anteriormente.</p>
-<p>Após o processo terminar de rodar, ao ir na tab branches será possível ver que temos uma nova branch chamada gh-pages, e o contéudo dela é os arquivos de build da sua aplicação</p>
-<p><img src="/images/aws-spa-4.png" alt="Printscreen com explicações do comando acima"></p>
-<p>Com isso, ainda teremos um passo a mais para terminamos a configuração, será necessário configurar o Github para distruibir a página do seu projeto, para isso vá em: <code>Settings</code> </p>
-<p><img src="/images/aws-spa-5.png" alt="Printscreen com explicações do comando acima"></p>
-<p>Depois selecione a tab pages, e dentro de sua configuração, aponte a branch que irá para o github actions a mesma que você gerou gh-pages, e clique em salvar.</p>
-<p><img src="/images/aws-spa-6.png" alt="Printscreen com explicações do comando acima"></p>
-<aside>
-💡 Caso esteja utilizando react ou outro framework, será necessário mudar as referênciasde script para o path correto, isso significa que em vez de procurar as dependências dentro da raiz do site, será necessário buscar no caminho relativo ao nome do repositório. No meu caso era /frontend-deploy alguns frameworks já vem com facilitadores para tal alteração.
-
-</aside>
-
-<p>Caso tenha interesse no repositório ou no resultado, ambos seguem abaixo! </p>
-<p><strong>Site Github Pages:</strong> <a target="_blank" rel="noopener" href="https://gleidiin.github.io/frontend-deploy/">https://gleidiin.github.io/frontend-deploy/</a></p>
-<p><strong>Repositório Github:</strong> <a target="_blank" rel="noopener" href="https://github.com/gleidiin/frontend-deploy">https://github.com/gleidiin/frontend-deploy</a></p>
-<h2 id="Proximos-passos…"><a href="#Proximos-passos…" class="headerlink" title="Próximos passos…"></a><strong>Próximos passos…</strong></h2><p>A seguir em nosso próximo tutorial, vamos conversar sobre como fazer deploys automatizados na AWS, destacando cenários que estamos trabalhando com aplicações SPA!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://notes.gleidson.me/aws-spa/" data-id="cl12v4dz00000aioi557j2hyk" data-title="Aplicação Frontend + Github Pages" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">março 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/aws-spa/">Aplicação Frontend + Github Pages</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
           </li>
+        
         
       </ul>
     </div>
   </div>
+</nav>
 
-  
-</aside>
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://gleidson.me/assets/images/background.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Notes&#39; Home">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/aws-spa/" target="_self">
+          <img src="/images/github-page-thumbnail.png" srcset="/img/loading.gif" lazyload alt="Aplicação Frontend + Github Pages">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/aws-spa/" target="_self">
+          Aplicação Frontend + Github Pages
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/aws-spa/" target="_self">
+          
+          Criar aplicações frontend é quase uma mania, ainda mais quando vemos um projeto interessante ou algo legal que gostaríamos de tentar replicar. Porém automatizar um deploy ou subir isso para algumas pe
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Github/">Github</a>
+            
+              <a href="/categories/Github/SPA/">SPA</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/CI/">CI</a>
+            
+              <a href="/tags/Hosting/">Hosting</a>
+            
+          </div>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 Gleidson Braga<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </article>
   </div>
-</footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Pesquisa</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">Palavra-chave</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     Feito com <i class="iconfont icon-love"></i> por Gleidson 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
 
 
 
 
-<script src="/js/script.js"></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
 </body>
 </html>
